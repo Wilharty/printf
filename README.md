@@ -1,1 +1,0 @@
-# printf ALX group project
