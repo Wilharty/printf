@@ -22,14 +22,11 @@ int (*check_specifier(const char *format))(va_list)
 		{NULL, NULL}
 	};
 
-	for (i = 0; my_array[i].t !=
-NULL; i++)
+	for (i = 0; my_array[i].t != NULL; i++)
 	{
-		if (*(my_array[i].t) ==
-*format)
+		if (*(my_array[i].t) == *format)
 		{
-			return
-(my_array[i].f);
+			return (my_array[i].f);
 		}
 	}
 
@@ -80,24 +77,21 @@ int print_int(va_list args)
  */
 	while (numb != 0)
 	{
-		my_arr[i] =
-(numb % 10);
+		my_arr[i] = (numb % 10);
 		numb = numb / 10;
 		if (numb != 0)
-			i++
+			i++;
 	}
 
 /*
  * Write the contents of the *
  * array to stdout
  */
-	for (i; i >= 0; i--)
+	for (i = 0; i >= 0; i--)
 	{
 /*convert int to char*/
-		x[0] =
-('0' + my_arr[i]);
-		count +=
-write(1, x, 1);
+		x[0] = ('0' + my_arr[i]);
+		count += write(1, x, 1);
 	}
 
 	return (count);
@@ -142,13 +136,11 @@ int print_dec(va_list args)
  * Write the contents of the *
  * array to stdout
  */
-	for (i; i >= 0; i--)
+	for (i = 0; i >= 0; i--)
 	{
 /*Convert int to char*/
-		x[0] =
-('0' + my_arr[i]);
-		count +=
-write(1, x, 1);
+		x[0] = ('0' + my_arr[i]);
+		count += write(1, x, 1);
 	}
 
 	return (count);
