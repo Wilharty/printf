@@ -1,2 +1,2 @@
 # printf
-first group of 2 project in ALX
+Set of print f function in a group of two contributors
